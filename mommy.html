@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <title>우리의 기록 | 여행사진</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <style>
+            * {
+                 font-family: 'Gowun Dodum', sans-serif;
+              }
+        .mytitle {
+            background-color: green;
+
+            width: 100%;
+            height: 400px;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cG9sYXJvaWRzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+            background-position: center;
+            background-size: cover;
+
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mytitle > button {
+            width: 200px;
+            height: 50px;
+
+            background-color: transparent;
+            color: white;
+
+            border-radius: 50px;
+
+            border: 1px solid white;
+
+            margin-top: 10px;
+        }
+
+        .mytitle > button:hover {
+            border: 2px solid white;
+
+        }
+
+        .mycomment {
+            color: gray;
+        }
+
+        .wrap {
+            max-width: 1200px;
+            width: 95%;
+            margin: 20px auto 0px auto;
+        }
+
+        .mypost {
+            max-width: 500px;
+            width: 95%;
+
+            margin: 20px auto 0px auto;
+
+            box-shadow: 0px 0px 3px 0px gray;
+            padding: 20px;
+        }
+        .mybtn {
+
+            margin: 20px auto;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mybtn > button {
+            margin: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>여행의 추억</h1>
+        <button>사진 기록하기</button>
+    </div>
+    <div class ="mypost">
+        <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">사진URL</label>
+        </div>
+        <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">촬영일자</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">코멘트</label>
+        </div>
+        <div class ="mybtn">
+            <button type="button" class="btn btn-dark">기록하기</button>
+            <button type="button" class="btn btn-outline-dark">닫기</button>
+        </div>
+
+    </div>
+    <div class="wrap">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://i.esdrop.com/d/4duvrjik2ib2/muqtwCuHFF.JPG"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2017년 제주도</h5>
+                        <p class="card-text">코로나 전 더운 여름</p>
+                        <p> ⭐⭐⭐⭐⭐ </p>
+                        <p class="mycomment">아빠랑 셋이 갔던 제주도 여행</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://i.esdrop.com/d/4duvrjik2ib2/JGmvZJnErh.JPG"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2019년 이탈리아 로마</h5>
+                        <p class="card-text">스페인광장으로 추정</p>
+                        <p> ⭐⭐⭐⭐⭐ </p>
+                        <p class="mycomment"> 다시 유럽여행가는 날까지!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://i.esdrop.com/d/4duvrjik2ib2/YrxYK8EjLx.JPG"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2019년 프랑스 파리</h5>
+                        <p class="card-text">여름같지 않았던 파리 날씨</p>
+                        <p> ⭐⭐⭐⭐⭐ </p>
+                        <p class="mycomment">2층 버스에서의 칼바람</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://i.esdrop.com/d/4duvrjik2ib2/wQ6MmPJx4R.JPG"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">2019년 남산</h5>
+                        <p class="card-text">벚꽃버러 등산한 날 </p>
+                        <p> ⭐⭐⭐⭐⭐ </p>
+                        <p class="mycomment">생각보다 높은 남산타워</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
